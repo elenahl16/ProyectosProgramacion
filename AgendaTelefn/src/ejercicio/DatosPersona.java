@@ -21,13 +21,7 @@ public class DatosPersona {
 
 	}
 	
-	public String formatoCorto() {
-		
-		String resultado;
-		resultado = nombre + "(" + numFijo + "," + numMovil + ")";		
-		return resultado;
-	}
-
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -68,4 +62,11 @@ public class DatosPersona {
 		this.gmail = gmail;
 	}
 	
+	public String formatoCorto() {
+		
+		String resultado;
+		resultado = nombre + "(" + numFijo + "," + numMovil + ")";		
+		return resultado;
+	}
+
 }

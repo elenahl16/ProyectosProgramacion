@@ -17,8 +17,9 @@ public class Principal {
 			System.out.println("[2] Añadir entradas");
 			System.out.println("[3] Modificar entradas");
 			System.out.println("[4] Borrar entradas");
-			System.out.println("[5] Mostrar entradas");
-			System.out.println("[6] Salir");
+			System.out.println("[5] Buscar entradas");
+			System.out.println("[6] Compactar la Agenda");
+			System.out.println("[7] Salir");
 			System.out.println("--------------------------------------------");
 			opcion = teclado.nextInt();
 			teclado.nextLine();
@@ -34,14 +35,23 @@ public class Principal {
 				break;
 
 			case 3:
+				agendita.modificarEntrada();
 				break;
 
 			case 4:
 				agendita.borrarEntrada();
 				break;
+				
+			case 5:
+				agendita.buscarAgenda();
+				break;
+				
+			case 6:
+				agendita.compactarAgenda();
+				break;
 			}
 
-		} while (opcion != 6);
+		} while (opcion != 7);
 	}
 
 }

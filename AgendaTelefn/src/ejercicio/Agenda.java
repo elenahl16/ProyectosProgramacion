@@ -18,11 +18,10 @@ public class Agenda {
 	}
 
 	public int insertarEntrada() {
-		
 
 		boolean encontrar = false;
 		int i = 0;
-		
+
 		// Buscamos el primer hueco vacio de la agenda
 		for (i = 0; i < datitos.length; i++) {
 
@@ -57,8 +56,8 @@ public class Agenda {
 			// La agenda esta petada
 			return -1;
 		}
-	
-	} 
+
+	}
 
 	public void mostrarEntradaAgenda() {
 
@@ -103,19 +102,19 @@ public class Agenda {
 		teclado.nextLine();
 
 		if (datitos[num] != null) {
-			
+
 			System.out.println("Introduzca el nombre tontito: (" + datitos[num].getNombre() + ")");
 			String nombre = teclado.nextLine();
 			if (!nombre.isEmpty()) {
 				datitos[num].setNombre(nombre);
 			}
-			
+
 			System.out.println("Introduzca el direccion tontito: (" + datitos[num].getDireccion() + ")");
 			String direccion = teclado.nextLine();
 			if (!direccion.isEmpty()) {
 				datitos[num].setDireccion(direccion);
 			}
-			
+
 			System.out.println("Introduzca el numero Fijo tontito:  (" + datitos[num].getNumFijo() + ")");
 			String numFijo = teclado.nextLine();
 			if (!numFijo.isEmpty()) {
@@ -141,6 +140,57 @@ public class Agenda {
 		}
 
 		return entradaModificada;
+	}
+
+	public void buscarAgenda() {
+
+		System.out.println("Introduce el término de búsqueda");
+		String termino = teclado.nextLine();
+		termino = termino.toUpperCase();
+
+		for (int i = 0; i < datitos.length; i++) {
+
+			if (datitos[i] != null) {
+				boolean deboMostrar = false;
+
+				if (datitos[i].getNombre().toUpperCase().contains(termino)) {
+					deboMostrar = true;
+				}
+
+				else if (datitos[i].getNumMovil().toUpperCase().contains(termino)) {
+					deboMostrar = true;
+				} else if (datitos[i].getNumFijo().toUpperCase().contains(termino)) {
+					deboMostrar = true;
+				} else if (datitos[i].getGmail().toUpperCase().contains(termino)) {
+					deboMostrar = true;
+				}
+
+				if (deboMostrar == true) {
+					System.out.println(i + " - " + datitos[i].formatoCorto());
+
+				}
+
+			}
+
+		}
+
+	}
+
+	public void compactarAgenda() {
+
+		DatosPersona[] arAuxiliar = new DatosPersona[datitos.length];
+		int j = 0;
+
+		for (int i = 0; i < datitos.length; i++) {
+
+			if (datitos[i] != null) {
+				arAuxiliar[j] = datitos[i];// 
+				j++;
+
+			}
+
+		}
+		datitos=arAuxiliar;//
 	}
 
 }
