@@ -1,0 +1,47 @@
+package Ejer5;
+
+import java.util.Scanner;
+
+public class Aplicacion {
+
+	static Scanner teclado = new Scanner(System.in);
+
+	public static void main(String[] args) {
+
+		JuegoDados juegoDado1 = new JuegoDados();
+		int opcion = 0;
+
+		do {
+
+			System.out.println("Tu saldo actual es: " + juegoDado1.getSaldo());
+			System.out.println("*---------------------------");
+			System.out.println("[1] Recargar saldo");
+			System.out.println("[2] Hacer apuesta");
+			System.out.println("[3] Salir del juego");
+			System.out.println("*-------------------------*");
+			opcion = teclado.nextInt();
+			teclado.nextLine();
+
+			switch (opcion) {
+
+			case 1:
+				System.out.println("Cuanto dinero quieres recargar");
+				int cantidad=teclado.nextInt();
+				
+				break;
+
+			case 2:
+
+				break;
+
+			case 3:
+
+				break;
+			default:System.err.println("Cerrando sesión....");
+			}
+
+		} while (opcion != 0);
+		
+	}
+
+}

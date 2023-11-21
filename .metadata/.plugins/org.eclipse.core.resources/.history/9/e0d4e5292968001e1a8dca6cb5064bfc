@@ -1,0 +1,22 @@
+package Ejer5;
+
+import java.util.Scanner;
+
+public class Aplicacion {
+
+	static Scanner teclado= new Scanner(System.in);
+	
+	public static void main(String[] args) {
+
+		
+		int opcion=0;
+		
+		do {
+			
+			System.out.println("Tu saldo actual es: " + );
+			
+			
+		}while(opcion!=0);
+	}
+
+}

@@ -1,0 +1,10 @@
+package Ejer1Simon;
+
+import java.util.Scanner;
+
+public class SimonGuarrero {
+	
+	Scanner teclado = new Scanner(System.in);
+	
+
+}

@@ -1,0 +1,17 @@
+package ejercicio;
+
+public class DatosPersona {
+	// Atributos
+
+	String nombre, direccion, numFijo, numMovil, gmail;
+
+	public DatosPersona() {
+		//Constructor por defecto
+		
+	}
+	
+	public DatosPersona(String nombre,String direccion,String numFijo,) {
+		//Constructor por defecto
+		
+	}
+}

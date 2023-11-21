@@ -1,0 +1,143 @@
+package ejercicio;
+
+import java.util.Scanner;
+
+/*
+ * Guía telefonica posible ejer de examen
+ */
+public class Agenda {
+	// Atributos
+
+	Scanner teclado = new Scanner(System.in);
+	int numEntrada;
+	DatosPersona[] datitos = new DatosPersona[numEntrada];
+
+	public Agenda() {
+		// Constructor por defecto
+
+	}
+
+	public int insertarEntrada() {
+		// Buscamos el primer hueco vacio de la agenda
+
+		int i = 0;
+		boolean encontrar = false;
+
+		for (i = 0; i < datitos.length; i++) {
+
+			if (datitos[i] == null) {
+				encontrar = true;
+				break;// salto
+			}
+		}
+
+		if (encontrar == true) {
+			// He encontrado el elemento vacio de la agenda
+
+			// Le vamos a pedimos al usuario los datos del nuevo registro
+			System.out.println("Introduzca el nombre tontito");
+			String nombre = teclado.nextLine();
+			System.out.println("Introduzca el direccion tontito");
+			String direccion = teclado.nextLine();
+			System.out.println("Introduzca el numero Fijo tontito");
+			String numFijo = teclado.nextLine();
+			System.out.println("Introduzca el número movil tontito");
+			String numMovil = teclado.nextLine();
+			System.out.println("Introduzca el gmail tontito");
+			String gmail = teclado.nextLine();
+
+			DatosPersona nuevaPersonita = new DatosPersona(nombre, direccion, numFijo, numMovil, gmail);
+			datitos[i] = nuevaPersonita;// aqui inserto el objeto en la posicion que buscabamos en la agenda
+			return i;
+
+		}
+
+		else {
+			// La agenda esta petada
+		}
+		return -1;
+	}
+
+	public void mostrarEntradaAgenda() {
+
+		// Recorremos las diferentes entradas de la agenda
+		System.out.println("----------------------------------------");
+		for (int i = 0; i < datitos.length; i++) {
+
+			if (datitos[i] != null) {// muestro los datos de la entrada
+				System.out.println(i + " - " + datitos[i].formatoCorto());
+
+			}
+
+		}
+		System.out.println("----------------------------------------");
+
+	}
+
+	public int borrarEntrada() {
+
+		int entradaBorrada = -1;
+		System.out.println("Introduce el indice de la entrada a borrar: ");
+		int num = teclado.nextInt();
+		teclado.nextLine();
+
+		if (datitos[num] != null) {
+			datitos[num] = null;
+			entradaBorrada = num;
+			System.out.println("La entrada " + num + " se ha borrado correctamente");
+
+		} else {
+			System.out.println("La entrada seleccionada no tiene datos");
+		}
+
+		return entradaBorrada;
+	}
+
+	public int modificarEntrada() {
+
+		int entradaModificada = -1;
+		System.out.println("Introduce el indice de la entrada a borrar: ");
+		int num = teclado.nextInt();
+		teclado.nextLine();
+
+		if (datitos[num] != null) {
+			System.out.println("Introduzca el nombre tontito: (" + datitos[num].getNombre() + ")");
+			String nombre = teclado.nextLine();
+			if (!nombre.isEmpty()) {
+				datitos[num].setNombre(nombre);
+			}
+			
+			System.out.println("Introduzca el direccion tontito: (" + datitos[num].getDireccion() + ")");
+			String direccion = teclado.nextLine();
+			if (!direccion.isEmpty()) {
+				datitos[num].setDireccion(direccion);
+			}
+			
+			System.out.println("Introduzca el numero Fijo tontito:  (" + datitos[num].getNumFijo() + ")");
+			String numFijo = teclado.nextLine();
+			if (!numFijo.isEmpty()) {
+				datitos[num].setNumFijo(numFijo);
+			}
+
+			System.out.println("Introduzca el número movil tontito: (" + datitos[num].getNumMovil() + ")");
+			String numMovil = teclado.nextLine();
+			if (!numMovil.isEmpty()) {
+				datitos[num].setNumMovil(numMovil);
+			}
+
+			System.out.println("Introduzca el gmail tontito: (" + datitos[num].getGmail() + ")");
+			String gmail = teclado.nextLine();
+			if (!gmail.isEmpty()) {
+				datitos[num].setGmail(gmail);
+			}
+
+		}
+
+		else {
+			System.out.println("La entrada seleccionada no tiene datos");
+		}
+
+		return entradaModificada;
+	}
+
+}

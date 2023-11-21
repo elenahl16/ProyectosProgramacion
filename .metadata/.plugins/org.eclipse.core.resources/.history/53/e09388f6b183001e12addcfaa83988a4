@@ -1,0 +1,19 @@
+package Ejer1Simon;
+
+import java.util.Scanner;
+
+public class SimonGuarrero {
+
+	Scanner teclado = new Scanner(System.in);
+	String rojo = "2";
+	String azul = "1";
+	String verde = "4";
+	String amarillo = "3";
+	int contadorSecuencia = 0;
+
+	public void generarSecuenc() {.amarillo
+		
+
+	}
+
+}

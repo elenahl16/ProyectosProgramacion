@@ -1,0 +1,31 @@
+package Ejer2Conecta4;
+
+public class Conecta4Juego {
+	// Atributos
+
+	final private int numFila = 6;
+	final private int numColumna = 7;
+	char[][] tablero = new char[numFila][numColumna];
+	private int turno = 1;
+	int numCasillasVacias = 0;
+
+	public Conecta4Juego() {
+		// Constructor por defecto
+
+	}
+
+	public void vaciarTablero() {
+
+		for (int i = 0; i < numFila; i++) {
+
+			for (int j = 0; j < numColumna; j++) {
+				tablero[i][j] = ' ';
+
+			}
+
+			numCasillasVacias = numFila * numColumna;
+
+		}
+
+	}
+}

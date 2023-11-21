@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="EjerClase.Rectangulo"/>
+    <fullyQualifiedTypeName name="EjercBoletin.Rectangulo"/>
+    <fullyQualifiedTypeName name="Ejer2.Persona"/>
+    <fullyQualifiedTypeName name="Ejer3.Banco"/>
+    <fullyQualifiedTypeName name="Ejer3.Cuenta"/>
+    <fullyQualifiedTypeName name="Ejer4.MedidorTiempo"/>
+    <fullyQualifiedTypeName name="Ejer5.JuegoDados"/>
+    <fullyQualifiedTypeName name="EjerEncapsul.SimuladorDados"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="EjerEncapsul2.JuegoTiempo"/>
+    <fullyQualifiedTypeName name="EjerBoletinCadenas.Ejer1"/>
+    <fullyQualifiedTypeName name="BoletinCadenas.BoletinCadenas1"/>
+    <fullyQualifiedTypeName name="BoletinCadenas.EjerBoletinString3"/>
+    <fullyQualifiedTypeName name="BoletinCadenas.EjerBoletinString4"/>
+    <fullyQualifiedTypeName name="BoletinCadenas.EjerBoletinString5"/>
+    <fullyQualifiedTypeName name="BoletinCadenas.EjerBoletinString6"/>
+    <fullyQualifiedTypeName name="BoletinCadenas.EjerBoletinString7"/>
+    <fullyQualifiedTypeName name="BoletinCadenas.EjerBoletinString9"/>
+    <fullyQualifiedTypeName name="BoletinCadenas.EjerBoletinString10"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.sql.Array"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="EjercMatriz.EjerMatriz"/>
+    <fullyQualifiedTypeName name="int"/>
+    <fullyQualifiedTypeName name="MisClases.Juego"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="Ejer2Conecta4.Conecta4Juego"/>
+    <fullyQualifiedTypeName name="Ejer1Simon.SimonEjer"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
+    <fullyQualifiedTypeName name="ejercicio.Agenda"/>
+    <fullyQualifiedTypeName name="ejercicio.DatosPersona"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+</qualifiedTypeNameHistroy>

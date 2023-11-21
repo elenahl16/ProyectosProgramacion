@@ -1,0 +1,13 @@
+package Ejer5;
+
+public class JuegoDados {
+	//Atributos
+	 
+	int saldoInicial,dado1,dado2,dado3;
+	
+	
+	public JuegoDados() {
+		
+	}
+
+}

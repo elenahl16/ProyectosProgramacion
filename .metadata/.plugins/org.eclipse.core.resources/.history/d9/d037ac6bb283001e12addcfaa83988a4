@@ -1,0 +1,35 @@
+package Ejer1Simon;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class SimonGuarrero {
+
+	Scanner teclado = new Scanner(System.in);
+	String rojo = "2";
+	String azul = "1";
+	String verde = "4";
+	String amarillo = "3";
+	int contadorSecuencia = 0;
+
+	public void generarSecuenc() {
+
+		Random a = new Random();
+		int secuancia = a.nextInt(1, 5);
+
+	}
+	public void comenzarPartida() {
+
+		Random aleatorio = new Random();
+		
+		System.out.println("-- Bienvenido al juego ---");
+
+		
+
+		}
+
+
+	public void mostrarSecuencia() {
+
+	}
+}

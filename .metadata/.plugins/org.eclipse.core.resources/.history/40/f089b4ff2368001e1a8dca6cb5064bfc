@@ -1,0 +1,11 @@
+package Ejer5;
+
+public class JuegoDados {
+	//Atributos
+	 
+	
+	public JuegoDados() {
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+package Ejer5;
+
+public class JuegoDados {
+	// Atributos
+
+	int saldoInicial, dado1, dado2, dado3;
+
+	public JuegoDados() {
+		// Constructor por defecto
+
+	}
+
+	public void incrementarSaldo(int cantidad) {
+
+		if (cantidad > 0) {
+			saldoInicial += cantidad;
+		}
+	}
+	
+	public int getSaldo() {
+		
+		return saldoInicial;
+	}
+	
+	public void lanzarDados(int dado1,int dado2, int dado3) {
+		
+		Random
+		
+	}
+}

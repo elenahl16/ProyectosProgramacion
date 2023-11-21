@@ -1,0 +1,30 @@
+package ejercicio;
+
+public class DatosPersona {
+	// Atributos
+
+	String nombre, direccion, numFijo, numMovil, gmail;
+
+	public DatosPersona() {
+		// Constructor por defecto
+
+	}
+
+	public DatosPersona(String nombre, String direccion, String fijo, String movil, String gmail) {
+		// Constructor parametrizado
+		
+		this.nombre=nombre;
+		this.direccion=direccion;
+		this.numFijo= fijo;
+		this.numMovil=movil;
+		this.gmail=gmail;
+
+	}
+	
+	public String formatoCorto() {
+		
+		String resultado;
+		
+		resultado = nombre + "(" + numFijo
+	}
+}

@@ -1,0 +1,11 @@
+package ejercicio;
+
+public class DatosPersona {
+	//Atributos
+	
+	String nombre;
+	String direccion;
+	
+	
+
+}

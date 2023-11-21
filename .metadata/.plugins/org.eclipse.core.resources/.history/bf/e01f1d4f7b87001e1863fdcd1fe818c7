@@ -1,0 +1,23 @@
+package ejercicio;
+
+public class Principal {
+
+	static Scanner teclado = new Scanner(System.in);
+	public static void main(String[] args) {
+
+		Agenda agendita = new Agenda(100);
+		int opcion = 0;
+
+		do {
+
+			System.out.println("[1] Mostrar entradas");
+			System.out.println("[2] Añadir entradas");
+			System.out.println("[3] Modificar entradas");
+			System.out.println("[4] Borrar entradas");
+			System.out.println("[5] Mostrar entradas");
+			opcion= 
+
+		} while (opcion != 0);
+	}
+
+}

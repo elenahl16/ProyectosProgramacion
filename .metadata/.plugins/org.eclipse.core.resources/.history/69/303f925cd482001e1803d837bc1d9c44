@@ -1,0 +1,121 @@
+package Ejer2Conecta4;
+
+import java.util.Scanner;
+
+public class Conecta4Juego {
+	// Atributos
+
+	final private int numFila = 6;
+	final private int numColumna = 7;
+	char[][] tablero = new char[numFila][numColumna];
+	private int turno = 1;
+	int numCasillasVacias = 0;
+
+	public Conecta4Juego() {
+		// Constructor por defecto
+
+	}
+
+	public void vaciarTablero() {
+
+		for (int i = 0; i < numFila; i++) {
+
+			for (int j = 0; j < numColumna; j++) {
+				tablero[i][j] = ' ';
+
+			}
+
+			numCasillasVacias = numFila * numColumna;
+
+		}
+
+	}
+
+	public void pintarTablero() {
+
+		for (int i = 0; i < numFila; i++) {
+
+			for (int j = 0; j < numColumna; j++) {
+				System.out.println("0"+"|1|" +"|2|" +"|3|"+ "|4|" +"|5|" +"|6|" );
+				System.out.print("|" + tablero[i][j] + "|");
+			}
+
+			System.out.println(""); // Aqui hace el salto de linea
+		}
+	}
+
+	public boolean insertarFicha() {
+
+		if (numCasillasVacias == 0) {
+			return false;
+		}
+
+		Scanner teclado = new Scanner(System.in);
+		boolean opcionValida = false;
+
+		while (opcionValida == false) {
+			System.out.println("Introduce el número de columna");
+			int columna = teclado.nextInt(); //
+
+			// Comprobamos que la columna que ha elegido el usuario esta en los limites del
+			// tablero
+			if (columna >= 0 && columna < numColumna) {
+
+				// Recorremos las posiciones de la tabla para esa columna de abajo arriba
+
+				for (int i = numFila - 1; i > 0; i--) {
+
+					if (tablero[i][columna] == ' ') {// hemos encontrado una posicion vacia
+						opcionValida = true;// nos salimos del bucl
+
+						if (turno == 1) {
+							tablero[i][columna] = 'X';
+						}
+
+						else {
+							tablero[i][columna] = 'O';
+						}
+						break;// Me salgo del bucle for
+					}
+
+				}
+
+			}
+
+		}
+		return true;
+	}
+
+	public void empezarPartida() {
+
+		// Primero llamamos al metodo vaciar tablero
+		vaciarTablero();
+
+		// Pintamos el tablero para su estado
+		pintarTablero();
+
+		while (insertarFicha() == true) {
+			// comprobamos si hay ganador
+
+			// Cambiamos de turno
+
+			if (turno == 1) {
+				turno = 2;
+			}
+
+			else {
+				turno = 1;
+			}
+
+			numCasillasVacias--;// decrementamos el numero de casillas vacias
+			pintarTablero();
+
+		}
+
+	}
+
+}
+/*
+ * NOTACIONES
+ * 
+ */
