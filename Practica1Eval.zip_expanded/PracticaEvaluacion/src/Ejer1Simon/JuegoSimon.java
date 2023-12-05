@@ -11,6 +11,7 @@ public class JuegoSimon {
 
 	Scanner teclado = new Scanner(System.in);
 	String cadenaColores = "";
+	static int contadorNumAciertos = 0;
 
 	public JuegoSimon() {
 		// Constructor por defecto
@@ -60,6 +61,11 @@ public class JuegoSimon {
 			if (!cadenaSecuenc.equals(cadenaColores)) {
 				System.err.println("Has fallado, sigue intentandolo...");
 				teclado.nextLine();
+			}
+
+			else {
+				contadorNumAciertos++; // si se cumple incrementamos el contador
+
 			}
 			salirMenu = true;
 		}
